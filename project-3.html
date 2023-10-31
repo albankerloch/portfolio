@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Serveru Web en C++</title>
+    <title>Un Bash Basique</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -71,14 +71,14 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Serveur Web en C++</h1>
+        <h1 class="heading-primary">Un Bash Basique</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Création d'un programme répondant à des requêtes HTTP venues du Web
+            Création d'un programme fonctionnant comme Bash sous Mac
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://github.com/albankerloch/webserver-in-cpp" class="btn btn--bg" target="_blank">Lien Github</a>
+          <a href="https://github.com/albankerloch/basic-bash" class="btn btn--bg" target="_blank">Github</a>
         </div>
       </div>
     </section>
@@ -87,7 +87,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/webserver2.jpg"
+              src="./assets/jpeg/bash.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -96,13 +96,18 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Le projet</h3>
               <p class="project-details__desc-para">
-                Le programme répond aux requêtes HTTP à la manière de Nginx : chargement d'un fichier de configuration, utilisation de sockets, polling pour gérer les connexions concomitantes, lecture des headers, envoi d'une réponse avec le protocole HTTP.
+                Le programme permet de lancer des programmes dans un environnement Unix.
               </p>
               <p class="project-details__desc-para">
                 Les fonctionnalités :<br>
-                - Lancer plusieurs serveurs hébergeant plusieurs sites<br>
-                - Gérer les méthodes HTTP GET, POST et DELETE<br>
-                - Permettre l'usage d'un CGI (Common Gateway Interface) comme PHP<br>
+                - Afficher un prompt à l'utilisateur<br>
+                - Trouver et lancer l'éxécutable adéquat (via le PATH ou un chemin absolu ou relatif)<br>
+                - Prendre en compte les redirections >, <, >>, << <br>
+                - Quitter sans fuite mémoire après les commandes CTRL+D, CTRL+C et CTRL+\<br>
+                - Prendre en compte les pipes | <br>
+                - Gérer les variables d'environnement et la commande $? <br>
+                - Prendre en compte les simples et doubles guillemets : ' et "<br>
+                - Implémenter les fonctions echo, cd, pwd, export, unset, env, exit<br>
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -116,10 +121,10 @@
             <div class="project-details__links">
               <h3 class="project-details__content-title">Code source</h3>
               <a
-                href="https://github.com/albankerloch/webserver-in-cpp"
+                href="https://github.com/albankerloch/basic-bash"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Lien Github</a
+                >Github</a
               >
             </div>
           </div>
@@ -154,6 +159,9 @@
             <h4 class="heading heading-sm text-lt">Alban Kerloc'h</h4>
             <p class="main-footer__short-desc">
               Data Engineer Senior
+            </p>
+            <p class="main-footer__short-desc">
+              alban.kerloch@gmail.com
             </p>
           </div>
         </div>
