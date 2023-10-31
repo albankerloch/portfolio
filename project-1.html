@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
+    <title>Serveur Web en C++</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -22,78 +22,63 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/png/alban-kerloch.png"
+              alt="Alban Kerloc'h Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Alban Kerloc'h</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link"> Accueil </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link"> Mon profil </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link"> Mes projets </a>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
         </div>
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./index.html"> Accueil </a>
             </li>
-
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./index.html#about"> Mon profil </a>
             </li>
-
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./index.html#projects">Mes Projects </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
           </ul>
         </div>
+        <img
+        src="./assets/png/world-ico.png"
+        alt="Alban Kerloc'h Logo Image"
+      />
       </div>
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
+        <h1 class="heading-primary">Serveur Web en C++</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Création d'un programme répondant à des requêtes HTTP venues du Web
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://github.com/albankerloch/webserver-in-cpp" class="btn btn--bg" target="_blank">Lien Github</a>
         </div>
       </div>
     </section>
@@ -102,61 +87,39 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
+              src="./assets/jpeg/webserver2.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <h3 class="project-details__content-title">Le projet</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                Le programme répond aux requêtes HTTP à la manière de Nginx : chargement d'un fichier de configuration, utilisation de sockets, polling pour gérer les connexions concomitantes, lecture des headers, envoi d'une réponse avec le protocole HTTP.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                Les fonctionnalités :<br>
+                - Lancer plusieurs serveurs hébergeant plusieurs sites<br>
+                - Gérer les méthodes HTTP GET, POST et DELETE<br>
+                - Permettre l'usage d'un CGI (Common Gateway Interface) comme PHP<br>
               </p>
             </div>
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title">Technologies utilisées</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">HTTP</div>
+                <div class="skills__skill">PHP</div>
               </div>
             </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Code source</h3>
               <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
+                href="https://github.com/albankerloch/webserver-in-cpp"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                >Lien Github</a
               >
             </div>
           </div>
@@ -168,60 +131,31 @@
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
             <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
+              <span>Liens</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/albankerloch">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://fr.linkedin.com/in/albankerloch">
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
+                  src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Alban Kerloc'h</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Data Engineer Senior
             </p>
           </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
         </div>
       </div>
     </footer>
