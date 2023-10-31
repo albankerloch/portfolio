@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
   </head>
   <body>
     <header class="header">
@@ -44,18 +45,19 @@
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
+        </div>
+        <img
+          src="./assets/png/world-ico.png"
+          alt="Alban Kerloc'h Logo Image"
+        />
+        <div>
+          <button onclick="i18next.changeLanguage('en')">
+          English
+          </button>
+          <button onclick="i18next.changeLanguage('de')">
+          Français
+          </button>
+          <div id="output" />
         </div>
       </div>
       <div class="header__sm-menu">
@@ -64,20 +66,21 @@
             <li class="header__sm-menu-link">
               <a href="./index.html"> Accueil </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> Qui suis-je ? </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#projects">Mes Projects </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
           </ul>
         </div>
+        <img
+        src="./assets/png/world-ico.png"
+        alt="Alban Kerloc'h Logo Image"
+      />
       </div>
     </header>
     <section class="home-hero">
@@ -130,13 +133,13 @@
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Formé à <strong>Audencia Nantes</strong>, 
-                j'ai d'abord découvert par l'informatique par une
-                expérience métier de 3 ans comme contrôleur de gestion au <strong>Crédit Foncier</strong>.
+                j'ai d'abord découvert par l'informatique par le biais d'une
+                expérience métier de 3 ans en contrôle de gestion au <strong>Crédit Foncier</strong>.
               </p>
               <p class="about__content-details-para">
                 J'ai ensuite intégré l'<strong>École 42</strong> pour contribuer en 
                 tant que business analyste pendant 2 ans puis comme développeur depuis 2 ans 
-                sur des projets dans le secteur de l'énergie au sein de <strong>CGI France</strong> .
+                à des projets dans le secteur de l'énergie au sein de <strong>CGI France</strong> .
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
@@ -157,7 +160,7 @@
               <div class="skills__skill">Javascript</div>
               <div class="skills__skill">C</div>
               <div class="skills__skill">Sparks</div>
-              <div class="skills__skill">Haddoop</div>
+              <div class="skills__skill">Hadoop</div>
               <div class="skills__skill">Recette</div>
               <div class="skills__skill">Maîtrise d'ouvrage</div>
               <div class="skills__skill">Machine Learning</div>
@@ -235,9 +238,9 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Bash pour Unix</h3>
+              <h3 class="projects__row-content-title">Basic Bash</h3>
               <p class="projects__row-content-desc">
-                Création d'un programme avec les mêmes fonctionnalités que bash : 
+                Création d'un programme avec les mêmes fonctionnalités de base que bash : 
                 trouver et lancer l'éxécutable adéquat (selon le PATH ou un chemin), gestion des redirections, pipes et variables d'environnement.
               </p>
               <a
